@@ -1,0 +1,59 @@
+@import "~bootstrap/scss/bootstrap";
+@import "variables";
+@import "colors";
+@import "mixins";
+@import "functions";
+@import "components";
+@import "pages";
+@import "glyphicons";
+
+
+body {
+    font-family: $font-mukta-sans-serif;
+  
+}
+
+
+.wrapper {
+
+    display: flex;
+    align-items: stretch;
+    background-color: $white;
+
+    #content {
+        width: 100%;
+        min-height: 100vh;
+        transition: all 0.3s;
+        background-color: $white;
+
+        .content-container {
+            padding: 15px 0 0 0;
+
+            h1 {
+                &.page-heading {
+                    font-size: 30px;
+                    color: $medium-black;
+                    margin: 0 0 20px 0;
+                }
+            }
+
+            p {
+                color: $medium-black;
+            }
+
+            div {
+                color: $medium-black;
+            }
+
+            .panel-card {
+               background: $white;
+
+                .card-body {
+                    color: $medium-black;
+                }
+            }
+        }
+        
+    }
+  
+}

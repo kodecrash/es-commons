@@ -1,0 +1,56 @@
+@import "colors";
+
+@mixin mobile {
+    @media (max-width: 599px) { @content; }
+}
+
+@mixin mobile-landscape {
+    @media (max-width: 767px) { @content; }
+}
+
+@mixin tablet {
+    @media (min-width: 600px) and (max-width: 1023px) { @content; }
+}
+
+@mixin tablet-landscape {
+    @media (max-width: 1024px) and (orientation:landscape)  { @content; }
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) { @content; }
+}
+
+@mixin linear-gradient-grey {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f8f9+0,d7dee3+28,d7dee3+76,f5f7f9+100 */
+    background: #f6f8f9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6f8f9 0%, #d7dee3 28%, #d7dee3 76%, #f5f7f9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f6f8f9 0%,#d7dee3 28%,#d7dee3 76%,#f5f7f9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f6f8f9 0%,#d7dee3 28%,#d7dee3 76%,#f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+
+}
+
+@mixin dark-red-gradient-background {
+    background: $dark-red;
+    background-image: linear-gradient(
+        to right top,
+        #71040d,
+        #79030f,
+        #800310,
+        #880211,
+        #900112,
+        #980112,
+        #a10012,
+        #a90012,
+        #b40111,
+        #bf0310,
+        #cb060d,
+        #d60a0a
+    );
+}
+
+@mixin box-shadow-outside {
+    -webkit-box-shadow: 10px 11px 12px -9px rgba(133,131,133,1);
+    -moz-box-shadow: 10px 11px 12px -9px rgba(133,131,133,1);
+    box-shadow: 10px 11px 12px -9px rgba(133,131,133,1);
+}

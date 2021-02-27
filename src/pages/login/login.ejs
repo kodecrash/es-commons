@@ -1,0 +1,37 @@
+<!-- HTMl header including external scripts and CSS files-->
+<%- include('../../views/partials/html-header') %>
+
+
+
+<div class="login-reg-panel">
+  <div class="login-info-box">
+    <h2>Have an account?</h2>
+    <p>Lorem ipsum dolor sit amet</p>
+    <label id="label-register" for="log-reg-show">Login</label>
+    <input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
+  </div>
+
+  <div class="register-info-box">
+    <img src="images/bdHeader.png" />
+    <h4 class="tagline">An initiative inspired by Jagadguru Narendracharyaji Maharaj's noble thought,
+      Live and help others to Live (तुम्ही जगा, दुसऱ्याला जगवा)</h4>
+  </div>
+
+  <div class="white-panel">
+    <div class="login-header text-center">
+      <div class="bin-logo">
+
+      </div>
+    </div>
+    <div class="login-show">
+      <h2>LOGIN</h2>
+      <form name="loginForm" id="loginForm">
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Login">
+      </form>
+      <a href="">Forgot password?</a>
+    </div>
+  </div>
+</div>
+<%- include('../../views/partials/html-footer') %>
